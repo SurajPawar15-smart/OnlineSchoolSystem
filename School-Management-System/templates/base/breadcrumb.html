@@ -1,0 +1,24 @@
+{% load static %}
+<ol class="breadcrumb bg-dark text-white">
+
+    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+    <li class="breadcrumb-item active">Dashboard</li>
+    
+
+    <!-- Breadcrumb Menu-->
+    <li class="breadcrumb-menu d-md-down-none text-white">
+        <div class="btn-group" role="group" aria-label="Button group">
+        
+    
+            <a class="btn bg-dark text-white" href="{% url 'home' %}"><i class="icon-settings"></i> &nbsp;Settings</a>
+        </div>
+    </li>
+
+
+
+
+
+
+    {% block breadcrumb %}
+    {% endblock %}
+</ol>
